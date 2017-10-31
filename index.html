@@ -16,12 +16,12 @@
     <section id="app-2">
       <header>
         <nav class="navbar rounded-0 p-1 text-white">
-          <i class="btn-hover fa fa-times p-1" v-if="btnside" v-on:click="btnside = !btnside" style="cursor: pointer;"></i>
-          <i class="btn-hover fa fa-bars p-1" v-if="!btnside" v-on:click="btnside = !btnside" style="cursor: pointer;"></i>
-          <a class="brand p-1" href="#">HipeBook!</a>
-        <ul class="navbar-nav mr-auto"></ul>
-        <a class="btn-hover nav-link text-white p-1" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span class="hidden-md-down"> invidato</span></a>
-        <a class="btn-hover nav-link text-white p-1 mr-0"  href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span class="hidden-md-down"> salir</span> </a>
+          <i class="btn-hover fa fa-times fa-lg p-1" v-if="btnside" v-on:click="btnside = !btnside" style="cursor: pointer;"></i>
+          <i class="btn-hover fa fa-bars fa-lg p-1" v-if="!btnside" v-on:click="btnside = !btnside" style="cursor: pointer;"></i>
+          <a class="brand btn-hover p-1" href="#">HipeBook!</a>
+        <ul class="navbar-nav mr-auto icon-menu"></ul>
+        <a class="btn-hover nav-link text-white p-1" href="#"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i><span class="hidden-md-down"> invitado</span></a>
+        <a class="btn-hover nav-link text-white p-1 mr-0"  href="#"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i><span class="hidden-md-down pr-0"> salir</span> </a>
       </nav>
     </header>
     <div v-if="btnside" class="sidebar1 p-2" style="z-index: 2;position: absolute;">
