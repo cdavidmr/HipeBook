@@ -1,0 +1,109 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu+Condensed'
+@import 'https://fonts.googleapis.com/css?family=Bree+Serif'
+
+fontnav = 'Ubuntu Condensed', sans-serif
+fontsidenav = 'Bree Serif', serif
+colorside = #6d6d6d
+colornav = #031821
+
+border-radius()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  border-radius: arguments
+
+box-shadow()
+	-webkit-box-shadow: arguments
+	-moz-box-shadow: arguments
+	box-shadow: arguments
+
+body
+	background-color #b7b7b7	
+	position relative
+
+a:link
+  text-decoration: none
+
+nav
+  height: 32px
+  font-size: 16px
+  color: #fff
+  background-color colornav
+  font-family fontnav
+  z-index 2
+  
+.brand
+	font-size 18px
+  
+.sidebar1
+	box-shadow  3px 2px 11px -2px rgba(0,0,0,0.75)
+	width 180px
+	height 100%
+    z-index 1   
+    position absolute
+	background-color colorside	
+	font-size 14px
+	font-family fontsidenav
+	font-weight normal
+
+header
+	color white
+	
+button
+	cursor pointer
+	
+.btn-sidebar	
+	height 5px
+	width 5px
+	
+.btn-hover:hover
+	background-color rgba(44, 44, 45, 0.9)
+	border-radius 5px
+	
+.brand
+	color white
+	font-weight bold	
+	
+.brand:hover
+	color white
+	
+.subtem
+	color colornav
+.topic
+	color white
+	
+.topic:hover
+	color #9cff91
+	transform scale(1.2)
+.social
+	background-color rgba(255, 255, 255, .2)
+	padding 2px
+	border-radius 20px
+	text-align center
+.logoso:hover
+	background-color white
+	padding 0px
+	transform scale(1.2)
+                
+.input-group.md-form.form-sm.form-1 input{
+    border: 1px solid #bdbdbd;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input {
+    border: 1px solid #bdbdbd;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.red-border  {
+    border: 1px solid #ef9a9a;
+}
+.input-group.md-form.form-sm.form-2 input.lime-border  {
+    border: 1px solid #cddc39;
+}
+.input-group.md-form.form-sm.form-2 input.amber-border  {
+    border: 1px solid #ffca28;
+}
+                
+            
+
+	

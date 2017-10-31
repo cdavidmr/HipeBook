@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>HipeBook!</title>
+    <!-- Material Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css"/>
+    <!-- css-->
+    <link rel="stylesheet" href="css/my-style.css"/>
+    <!-- Icons-->
+    <script src="https://use.fontawesome.com/08583299a3.js"></script>
+  </head>
+  <body>
+    <section id="app-2">
+      <header>
+        <nav class="navbar rounded-0 p-1 text-white">
+          <i class="btn-hover fa fa-times p-1" v-if="btnside" v-on:click="btnside = !btnside" style="cursor: pointer;"></i>
+          <i class="btn-hover fa fa-bars p-1" v-if="!btnside" v-on:click="btnside = !btnside" style="cursor: pointer;"></i>
+          <a class="brand p-1" href="#">HipeBook!</a>
+        <ul class="navbar-nav mr-auto"></ul>
+        <a class="btn-hover nav-link text-white p-1" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span class="hidden-md-down"> invidato</span></a>
+        <a class="btn-hover nav-link text-white p-1 mr-0"  href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span class="hidden-md-down"> salir</span> </a>
+      </nav>
+    </header>
+    <div v-if="btnside" class="sidebar1 p-2" style="z-index: 2;position: absolute;">
+      <ul class="p-0">
+        <li class="font-weight-bold pb-0"><blockquote class="subtem">Top hipes:</blockquote></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-globe"></i>  Todos</a></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-star"></i>  Destacados</a></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-thumbs-o-up"></i>  Mejor puntuado</a></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-eye"></i>  Mas visitado</a></li>
+      </ul>
+      <ul class="p-0">
+        <li class="font-weight-bold pb-0"><blockquote class="subtem">My hipes:</blockquote></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-globe"></i>  Todos</a></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-star"></i>  Destacados</a></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-thumbs-o-up"></i>  Mejor puntuado</a></li>
+        <li class=""><a class="topic ml-4" href="#"><i class="fa fa-eye"></i>  Mas visitado</a></li>
+      </ul>
+      <div class="container social p-2">
+        <a class="fa fa-google-plus-square fa-2x logoso" href="#" style="color: darkred; border-radius: 5px;"></a>
+        <a class="fa fa-facebook-square fa-2x logoso" href="#" style="color: darkblue; border-radius: 5px;"></a>
+        <a class="fa fa-twitter-square fa-2x logoso" href="#" style="color: #036e9e; border-radius: 5px;"></a>
+      </div>
+    </div>
+  </section>
+  <section class="col-11 pt-4 align-content-center container" style="z-index: -1; position: absolute;align-content: center; margin-left: 5%">
+    
+    <div class="container-fluid input-group md-form form-sm form-2 col-2  p-1 alert alert-primary rounded">
+      <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+      <span class="input-group-addon red lighten-3" id="basic-addon1"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+    </div>
+    <!--Panel-->
+    <div class="card">
+      <h6 class="card-header primary-color white-text">Videojuegps</h6>
+      <div class="card-body">
+        <h4 class="card-title">Special title treatment</h4>
+        <!--Card-->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay hm-white-slight">
+            <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="">
+            <a>
+              <div class="mask"></div>
+            </a>
+          </div>
+          <!--/.Card image-->
+          <!--Button-->
+          <a class="btn-floating btn-action"><i class="fa fa-chevron-right"></i></a>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <!--/.Card content-->
+          <!-- Card footer -->
+          <div class="card-data">
+            <ul>
+              <li><i class="fa fa-clock-o"></i> 05/10/2015</li>
+              <li><a href="#"><i class="fa fa-comments-o"></i>12</a></li>
+              <li><a href="#"><i class="fa fa-facebook"> </i>21</a></li>
+              <li><a href="#"><i class="fa fa-twitter"> </i>5</a></li>
+            </ul>
+          </div>
+          <!-- Card footer -->
+        </div>
+        <!--/.Card-->
+        
+      </div>
+    </div>
+    <!--/.Panel-->
+  </section>
+  <!-- Script-->
+  <!-- cdn Script VueJs -->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="js/my-vue.js"></script>
+
+  <!-- Material Bootstrap-->
+  <!-- My Script-->
+</body>
+</html>
