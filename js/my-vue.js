@@ -1,7 +1,8 @@
-
-var app2 = new Vue({
-  el: '#app-2',
+new Vue({
+  el: '#app-2', 
   data: {
-    btnside: false
+	btnside: false,
+	btnsearch: false	
   }
 })
+
